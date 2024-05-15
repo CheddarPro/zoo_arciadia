@@ -1,0 +1,353 @@
+.main-index {
+  background-color: #ffc759;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+.main-index2 {
+    background-color: #ffc759;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+  }
+
+.main-index .div {
+  background-color: #ffc759;
+  max-width: 1440px;
+  width: 100%;
+  height: auto;
+  position: relative;
+  box-sizing: border-box;
+  padding: 20px;
+}
+
+.main-index .frame-mentions {
+  width: 100%;
+  height: 41px;
+  background-color: #52b78840;
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-index .text-wrapper {
+  font-family: "Inter-SemiBold", Helvetica;
+  font-weight: 500;
+  color: #3b5249;
+  font-size: 16px;
+  text-decoration: underline;
+}
+
+.main-index .frame-contact {
+  display: column;
+  width: 100%;
+  background-color: #52b78880;
+  border-radius: 25px;
+  box-shadow: 0px 4px 10px #52b78880;
+}
+
+
+.main-index .component-boutton {
+  width: 100%;
+  height: 34px;
+  background-color: #e8e9edbf;
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #00000040;
+  box-shadow: 0px 4px 10px #52b78880;
+}
+
+.main-index .boutton {
+  font-family: "Inter-Regular", Helvetica;
+  font-weight: 400;
+  color: #3b5249;
+  font-size: 16px;
+  text-align: center;
+}
+
+.main-index .overlap, .main-index .overlap-group, .main-index .div-wrapper {
+  width: 100%;
+  background-color: #d9d9d9;
+  border-radius: 5px;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.main-index .text-wrapper-2, .main-index .text-wrapper-3, .main-index .text-wrapper-4 {
+  font-family: "Exo-Light", Helvetica;
+  font-weight: 300;
+  color: #00000080;
+  font-size: 12px;
+}
+
+.main-index .text-wrapper-5 {
+  font-family: "Exo-Medium", Helvetica;
+  font-weight: 500;
+  color: #3b5249;
+  font-size: 18px;
+}
+
+.main-index .frame-habitats, .main-index .frame-services {
+font-family: "Exo-Medium", Helvetica;
+font-weight: 500;
+color: #3b5249;
+width: 100%;
+background-color: #52b78880;
+border-radius: 25px;
+padding: 20px;
+box-sizing: border-box;
+box-shadow: 0px 4px 10px #52b78880;
+}
+
+.main-index .component-afficheur, .main-index .component-afficheur-2, .main-index .component-afficheur-3, .main-index .component-afficheur-4 {
+    font-family: "Exo-Medium", Helvetica;
+    font-weight: 600;
+    color: #3b5249;
+    font-size: 18px;
+  width: 100%;
+  background-color: #e8e9ed;
+  border-radius: 25px;
+  padding: 20px;
+  box-sizing: border-box;
+  border: 1px solid #34252f80;
+  box-shadow: 0px 4px 10px #ffc75980;
+  text-align: center;
+}
+
+.main-index .component-afficheur-2 {
+  box-shadow: 0px 4px 10px #52b78880;
+}
+
+
+.main-index .text-wrapper-6 {
+  font-family: "Inter-SemiBold", Helvetica;
+  font-weight: 600;
+  color: #3b5249;
+  font-size: 16px;
+}
+
+.main-index .text-wrapper-7, .main-index .text-wrapper-9, .main-index .text-wrapper-8 {
+  text-align: center;
+  font-family: "Exo-Bold", Helvetica;
+  font-weight: 700;
+  color: #3b5249;
+  font-size: 32px;
+}
+
+.main-index .frame-hero-accueil {
+  display: flex;
+  width: 100%;
+  background-color: #52b78880;
+  border-radius: 15px;
+  padding: 36px;
+  box-sizing: border-box;
+}
+
+.main-index .le-zoo-arcadia-fond {
+  font-family: "Regular", Helvetica;
+  font-weight: 800;
+  text-align: center;
+  color: #3b5249;
+  font-size: 18px;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding-left: 24px;
+}
+
+.main-index .logo-arcadia {
+  width: 100%;
+  max-width: 240px;
+  object-fit: cover;
+  border-radius: 50%;
+  box-shadow: 0px 0px 25px #ffc759;
+}
+
+.main-index .frame-navbar {
+  font-family: "Exo-Medium", Helvetica;
+  font-weight: 500;
+  color: #3b5249;
+  width: 100%;
+  display: center;
+  justify-content: space-between;
+  padding: 10px 0;
+}
+
+.main-index .boutton-wrapper, .main-index .component-boutton-2, .main-index .component-boutton-3, .main-index .component-boutton-4 {
+  font-family: "Exo-Medium", Helvetica;
+  font-weight: 500;
+  color: #3b5249;
+  width: auto;
+  height: 57px;
+  background-color: #e8e9ed;
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #00000040;
+  box-shadow: 0px 4px 10px #52b78880;
+}
+
+.airtable-embed {
+    width: 100%;  /* Full width */
+    border-radius: 15px; /* Rounded corners */
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.frame-navbar {
+  display: flex;
+  justify-content: center; /* Centre les boutons horizontalement */
+  align-items: center; /* Centre les boutons verticalement */
+  height: 100px; /* Hauteur fixe pour la barre de navigation */
+  background-color: #ffc759; /* Couleur de fond de la barre de navigation */
+}
+
+.button-container {
+  display: flex;
+  gap: 20px; /* Espace entre les boutons */
+}
+
+.component-button {
+  font-family: "Exo-Medium", Helvetica;
+  font-weight: 500;
+  color: #3b5249;
+  background-color: #e8e9ed;
+  border-radius: 15px;
+  border: 1px solid #00000040;
+  box-shadow: 0px 4px 10px #52b78880;
+  padding: 10px 20px; /* Padding pour agrandir le bouton */
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s; /* Transition douce pour le hover */
+}
+
+.component-button:hover {
+  background-color: #52b788; /* Changement de couleur de fond au survol */
+  color: #fff; /* Changement de couleur de texte au survol */
+}
+
+.grommet-icons {
+  width: 24px; /* Taille de l'icône */
+  height: auto; /* Hauteur automatique pour maintenir le ratio */
+}
+
+/* Style for the popup */
+.popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* semi-transparent background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000; /* high z-index to ensure it covers other elements */
+}
+
+.popup-content {
+  background-color: #fff;
+  width: 75%; /* Fixed width, but you can adjust as needed */
+  height: 75%; /* Fixed height, but you can adjust as needed */
+  padding: 50px;
+  border-radius: 15px; /* Rounded corners like your buttons */
+  box-shadow: 0px 4px 10px #52b78880; /* Shadow similar to the buttons */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid #00000040;
+}
+
+.close-btn {
+  cursor: pointer;
+  align-self: flex-end;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.popup-content h2 {
+  font-family: "Exo-Medium", Helvetica;
+  color: #3b5249;
+  margin-bottom: 20px; /* Spacing below the header */
+}
+
+.popup-content form {
+  width: 100%; /* Ensures form elements use the full width */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.popup-content label {
+  align-self: flex-start;
+  font-family: "Exo-Medium", Helvetica;
+  color: #3b5249;
+}
+
+.popup-content input[type="text"],
+.popup-content input[type="password"] {
+  font-family: "Exo-Medium", Helvetica;
+  color: #3b5249;
+  width: 90%; /* Slightly less than full width for padding */
+  padding: 8px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px; /* Slightly rounded corners for the input fields */
+}
+
+.popup-content button {
+  font-family: "Exo-Medium", Helvetica;
+  font-weight: 500;
+  color: #fff;
+  background-color: #4CAF50; /* Green button to submit */
+  width: 90%;
+  padding: 10px;
+  margin-top: 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.component-afficheur-4, .component-afficheur-3, .logo-arcadia, .component-afficheur,  .button-container {
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.component-afficheur-4:hover, .component-afficheur-3:hover, .logo-arcadia:hover, .component-afficheur:hover, .button-container:hover {
+  transform: scale(1.05); /* Légère augmentation de taille */
+}
+
+.additional-info {
+  padding: 10px;
+  border-top: 1px solid #ccc; /* Ligne séparatrice */
+  display: none; /* Caché initialement */
+}
+
+/* Animation pour le détail supplémentaire */
+.component-afficheur-4.active .additional-info, .component-afficheur-3.active, .component-afficheur.active, .additional-info {
+  display: block; /* Afficher les détails au clic */
+}
+
+
+@media (max-width: 768px) {
+  .main-index .text-wrapper-7, .main-index .text-wrapper-9 {
+    font-size: 24px; /* Adjusting text size for smaller screens */
+  }
+  
+  .main-index .text-wrapper, .main-index .text-wrapper-2, .main-index .text-wrapper-3, .main-index .text-wrapper-4, .main-index .text-wrapper-5 {
+    font-size: 14px; /* Adjusting text size */
+  }
+
+  .main-index .frame-navbar {
+    flex-direction: column; /* Vertical alignment of navigation buttons */
+  }
+
+  .main-index .component-boutton, .main-index .boutton-wrapper {
+    width: 100%; /* Full width buttons */
+    margin-top: 10px; /* Space between buttons */
+  }
+}

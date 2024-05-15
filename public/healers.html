@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Espace administration du Zoo Arcadia</title>
+  <meta name="description" content="Espace Vétérinaire du Zoo" />
+  <meta name="author" content="Your Name" />
+  <link rel="stylesheet" href="globals.css" />
+  <link rel="stylesheet" href="css/styleguide2.css" />
+  <link rel="stylesheet" href="css/style2.css" />
+</head>
+<body class="body">
+  <header>
+    <h1><em><b>Espace Vétérinaire du Zoo ARCADIA</b></em></h1>
+    <nav>
+      <ul>
+          <li><a href="../public/index.html">Retour au site principal</a></li>
+          <li><a href="../server/logout.php">Déconnexion</a></li>
+      </ul>
+  </nav>
+  </header>
+  <main>
+
+    <section class="services">
+        <h2>Gestion des services</h2>
+        <div class="iframe-container">
+          <div class="iframe-column">
+            <iframe class="airtable-embed" src="https://airtable.com/embed/appkPt4EdHQRwMCAt/shrhrwqnsKcXklgzG?backgroundColor=yellow&viewControls=on" frameborder="0" onmousewheel="" width="100%" height="533" style="background: transparent; border: 1px solid #ccc;"></iframe>
+          </div>
+          <div class="iframe-column">
+            <iframe class="airtable-embed" src="https://airtable.com/embed/appkPt4EdHQRwMCAt/shrlBS7vw9dvaD9I3?backgroundColor=yellow" frameborder="0" onmousewheel="" width="100%" height="533" style="background: transparent; border: 1px solid #ccc;"></iframe>
+          </div>
+        </div>
+    </section>
+    <div class="divider"></div>
+
+    <section class="habitats">
+        <h2>Gestion des habitats</h2>
+        <div class="iframe-container">
+          <div class="iframe-column">
+            <iframe class="airtable-embed" src="https://airtable.com/embed/appkPt4EdHQRwMCAt/shrwszz8vEVQyoTnA?backgroundColor=yellow&viewControls=on" frameborder="0" onmousewheel="" width="100%" height="533" style="background: transparent; border: 1px solid #ccc;"></iframe>
+          </div>
+          <div class="iframe-column">
+            <iframe class="airtable-embed" src="https://airtable.com/embed/appkPt4EdHQRwMCAt/shrLGxyRaw6zdnsu8?backgroundColor=yellow" frameborder="0" onmousewheel="" width="100%" height="533" style="background: transparent; border: 1px solid #ccc;"></iframe>
+          </div>
+        </div>
+    </section>
+    <div class="divider"></div>
+
+    <section class="animaux">
+        <h2>Gestion des animaux</h2>
+        <div class="iframe-container">
+          <div class="iframe-column">
+            <iframe class="airtable-embed" src="https://airtable.com/embed/appkPt4EdHQRwMCAt/shrpcia29fKy8xDSB?backgroundColor=yellow&viewControls=on" frameborder="0" onmousewheel="" width="100%" height="533" style="background: transparent; border: 1px solid #ccc;"></iframe>
+          </div>
+          <div class="iframe-column">
+            <iframe class="airtable-embed" src="https://airtable.com/embed/appkPt4EdHQRwMCAt/shr62eCeRKNAXoxyO?backgroundColor=yellow" frameborder="0" onmousewheel="" width="100%" height="533" style="background: transparent; border: 1px solid #ccc;"></iframe>
+          </div>
+        </div>
+    </section>
+    <div class="divider"></div>
+
+    <div class="main-index">
+      <section class="creer-compte">
+        <div><h2>Créer un compte</h2></div>
+        <br/>
+        <form action="/submit-account" method="post">
+            <div class="form-group">
+                <label for="email">Adresse e-mail :</label>
+                <input type="email" id="email" name="email" placeholder="Entrez votre adresse e-mail" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Mot de passe :</label>
+                <input type="password" id="password" name="password" placeholder="Entrez votre mot de passe" required>
+            </div>
+            <div class="form-group">
+                <label for="role">Type de compte :</label>
+                <select id="role" name="role" required>
+                    <option value="">Sélectionnez le type de compte</option>
+                    <option value="veterinaire">Compte vétérinaire</option>
+                    <option value="employe">Compte employé</option>
+                </select>
+            </div>
+            <button type="submit">Créer le compte</button>
+        </form>
+      </section>
+      <section class="commentaires">
+          <h2>Commentaires des visiteurs</h2>
+          <div class="iframe-container">
+              <iframe class="airtable-embed" src="https://airtable.com/embed/appkPt4EdHQRwMCAt/shrrjcFBBroX4Wgvl?backgroundColor=yellow&viewControls=on" frameborder="0" onmousewheel="" width="100%" height="533" style="background: transparent; border: 1px solid #ccc;"></iframe>
+          </div>
+      </section>
+    </div>
+    <div class="divider"></div>
+    <section class="veterinaire">
+      <h2>Compte rendu du vétérinaire</h2>
+      <p>call API Airtable filtré</p>
+    </section>
+    <div class="divider"></div>
+
+    <section class="statistiques">
+      <h2>Suivi de Statistiques par Google Analytics</h2>
+      <p>Statistiques de fréquentation du site</p>   
+    </section>
+
+  </main>
+</body>
+</html>

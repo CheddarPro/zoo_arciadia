@@ -1,0 +1,109 @@
+/* Styles généraux */
+.body {
+  font-family: Helvetica, sans-serif;
+  background-color: #52b788;
+  text-align: center;
+}
+
+.main-index {
+  font-family: Helvetica, sans-serif;
+    background-color: #ffc759;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+  }
+  
+  /* Styles des sections */
+  .services,
+  .habitats,
+  .animaux,
+  .form,
+  .veterinaire,
+  .statistiques,
+  .commentaires {
+    font-family: Helvetica, sans-serif;
+    position: relative;
+    background-color: #ffc759;
+    width: 100%;
+    border-radius: 15px;
+    box-shadow: 5px 5px 5px #42976e;
+  }
+  
+  /* Styles des iframes */
+  .iframe-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+  }
+  
+  .iframe-column {
+    flex: 1;
+    margin-right: 20px;
+  }
+  
+  .iframe-column:last-child {
+    margin-right: 0;
+  }
+  
+  .iframe-column iframe {
+    width: 100%;
+    height: 533px;
+    background: transparent;
+    border: 1px solid #ccc;
+  }
+  
+  /* Styles des formulaires */
+  .creer-compte form {
+    display: flex;
+    flex-direction: column;
+    padding: 25px;
+  }
+  
+  .creer-compte .form-group {
+    margin-bottom: 20px;
+    display: column;
+  }
+  
+  .creer-compte label {
+    margin-bottom: 5px;
+  }
+  
+  .creer-compte input[type="email"],
+  .creer-compte input[type="password"],
+  .creer-compte select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .creer-compte button[type="submit"] {
+    padding: 10px 20px;
+    background-color: #52b788;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .creer-compte button[type="submit"]:hover {
+    background-color: #42976e;
+  }
+
+  .title-container {
+    margin-bottom: 20px; /* Espace entre le titre et le formulaire */
+}
+.divider {
+  height: 4px;
+  width: 80%;
+  margin: 20px auto;
+  background-color: #3b5249; /* Un vert plus sombre pour contraster avec le fond clair */
+  box-shadow: 2px 2px 2px #ffc759;
+}
+
+
+  
+  /* Autres styles spécifiques */
+  /* Ajoutez vos styles supplémentaires ici */
+  

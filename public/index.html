@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Zoo Arcadia - Parc Zoologique en Bretagne</title>
+  <meta name="description" content="Découvrez le Zoo Arcadia, un parc zoologique unique en son genre situé en Bretagne. Venez explorer nos habitats et nos services.">
+  <meta name="keywords" content="zoo, parc zoologique, animaux, Bretagne, biodiversité">
+  <link rel="stylesheet" href="css/globals.css">
+  <link rel="stylesheet" href="css/styleguide.css">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</head>
+<body>
+  <div id="popup" class="popup" style="display: none;">
+    <div class="popup-content">
+      <span class="close-btn">&times;</span>
+      <h2>Connexion</h2>
+      <form id="loginForm" action="login.php" method="post" onsubmit="validateLogin(event)">
+        <label for="username">Nom d'utilisateur:</label>
+        <input type="text" id="username" name="username" required>
+        <label for="password">Mot de passe:</label>
+        <input type="password" id="password" name="password" required>
+        <button type="submit" action="../server/login.php">Se connecter</button>
+      </form>
+      <p id="loginError" style="color: red; display: none;">Compte non reconnu.</p>
+    </div>
+  </div>
+  <header class="frame-navbar">
+    <div class="button-container">
+      <button class="component-button" onclick="location.href='#accueil'">Accueil</button>
+      <button class="component-button" onclick="location.href='#habitats'">Les habitats</button>
+      <button class="component-button" onclick="location.href='#services'">Nos services</button>
+      <button class="component-button" onclick="location.href='#contact'">Nous contacter</button>
+      <button class="component-button open-popup-btn">
+        <img class="grommet-icons" src="img/connexion.png" alt="Connexion">
+      </button>
+    </div>
+  </header>
+  <div class="main-index" id="accueil">
+    <div class="div">
+      <div class="frame-hero-accueil">
+        <img class="logo-arcadia" src="img/logo arcadia.png">
+        <p class="le-zoo-arcadia-fond">
+          Le Zoo Arcadia, fondé en 1960 près de la forêt mythique de Brocéliande en Bretagne, est un parc zoologique
+          unique en son genre. Situé dans un cadre naturel exceptionnel, il s'étend sur plusieurs hectares et est
+          divisé en trois habitats distincts : la Savane, la Jungle et le Marais. <br /><br />Ces habitats sont
+          spécialement conçus pour offrir un environnement adapté et réaliste pour les animaux qui y résident,
+          reflétant leur milieu naturel d'origine tout en sensibilisant le public à la conservation de la
+          biodiversité. Venez explorer nos habitats et découvrir nos services pour une expérience inoubliable au cœur de la nature.
+        </p>
+      </div>
+      <br/>
+      <div class="frame-habitats" id="habitats">
+        <div class="text-wrapper-8">Nos habitats</div>
+        <br/>
+        <div class="component-afficheur-4" onclick="toggleDetails(this)">
+          <h3>Nom de l'habitat 1</h3>
+          <div class="additional-info" style="display: none;">            
+            <p>Détails supplémentaires sur le service...</p>
+            <p>Plus d'informations ici...</p></div>
+        </div>
+        <br/>
+        <div class="component-afficheur-4" onclick="toggleDetails(this)">
+          <h3>Nom de l'habitat 2</h3>
+          <div class="additional-info" style="display: none;">
+            <p>Détails supplémentaires sur le service...</p>
+            <p>Plus d'informations ici...</p></div>
+        </div>
+        <br/>
+        <div class="component-afficheur-4" onclick="toggleDetails(this)">
+          <h3>Nom de l'habitat 3</h3>
+          <div class="additional-info" style="display: none;">
+            <p>Détails supplémentaires sur le service...</p>
+            <p>Plus d'informations ici...</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br/>
+    <div class="frame-text-habitat">
+      <div class="div">
+      <p class="component-afficheur-2">
+        Chaque habitat est conçu non seulement pour émerveiller les visiteurs mais aussi pour offrir un
+        environnement naturel et sécurisé pour nos animaux, leur permettant de prospérer tout en éduquant et
+        en inspirant nos visiteurs sur la conservation de ces espèces magnifiques et leurs habitats naturels.
+      </p>
+    </div>
+  </div>
+    <br/>
+    <div class="div">
+    <div class="frame-services" id="services">
+      <div class="text-wrapper-9">Nos services</div>
+      <br/>
+      <div class="component-afficheur-4" onclick="toggleDetails(this)">
+          <h3>Nom du service 1 </h3>
+        <div class="additional-info" style="display: none;">
+          <p>Détails supplémentaires sur le service...</p>
+          <p>Plus d'informations ici...</p>
+        </div>
+      </div>
+      <br/>
+      <div class="component-afficheur-4" onclick="toggleDetails(this)">
+        <h3>Nom du service 1 </h3>
+      <div class="additional-info" style="display: none;">
+        <p>Détails supplémentaires sur le service...</p>
+        <p>Plus d'informations ici...</p>
+      </div>
+    </div>
+    <br/>
+    <div class="component-afficheur-4" onclick="toggleDetails(this)">
+      <h3>Nom du service 1 </h3>
+    <div class="additional-info" style="display: none;">
+      <p>Détails supplémentaires sur le service...</p>
+      <p>Plus d'informations ici...</p>
+    </div>
+  </div>
+    </div>
+  <br/>
+    </div>
+    <br/>
+    <div class="div">
+    <div class="frame-contact" id="contact">
+      <br/>
+      <div class="text-wrapper-9">Laissez-nous un commentaire</div>
+      <br/>
+      <iframe class="airtable-embed" src="https://airtable.com/embed/appkPt4EdHQRwMCAt/shrd8VVjzMQgEbxjs?backgroundColor=yellow"
+      frameborder="0" onmousewheel="" width="100%" height="880px" style="background: transparent;"></iframe>
+    </div>
+    <br/>
+    <div class="frame-mentions">
+      <br/>
+      <div class="text-wrapper">
+        <button class="component-button open-legal-popup-btn"> Tous droits réservés - Mentions légales 2042 - Zoo Arcadia©.</button>
+      </div>
+    </div>
+  </div>
+</div>
+  <div id="legal-popup" class="popup" style="display: none;">
+    <div class="popup-content">
+      <span class="close-legal-btn">&times;</span>
+      <h2>Mentions légales</h2>
+      <p>Le site web "Zoo Arcadia" est une création fictive réalisée dans le cadre de la formation Graduate Developer Full Stack chez Studi. Il a pour objectif de simuler un parc zoologique et de fournir des informations théoriques sur ses activités.</p>
+      <h2>Propriétaire du site :</h2>
+      <ul>
+        <li>Nom de l'entreprise : Zoo Arcadia</li>
+        <li>Siège social : Rue des Animaux, 12345 Ville Imaginaire</li>
+        <li>Téléphone : +00 123 456 789</li>
+        <li>Email : <a href="mailto:contact@zooarcadia.com">contact@zooarcadia.com</a></li>
+      </ul>
+      <h2>Directeur de la publication :</h2>
+      <ul>
+        <li>Nom du directeur : [Votre Nom]</li>
+        <li>Adresse email : [Votre Adresse Email]</li>
+      </ul>
+      <h2>Hébergement du site :</h2>
+      <ul>
+        <li>Nom de l'hébergeur : Studi</li>
+        <li>Siège social : 123 Avenue des Développeurs, 67890 Ville Numérique</li>
+        <li>Téléphone : +00 987 654 321</li>
+      </ul>
+      <h2>Protection des données personnelles :</h2>
+      <p>Conformément à la réglementation en vigueur sur la protection des données personnelles, vous disposez d'un droit d'accès, de rectification et de suppression des informations vous concernant. Pour exercer ce droit, veuillez contacter le propriétaire du site à l'adresse email indiquée ci-dessus.</p>
+      <h2>Droits d'auteur :</h2>
+      <p>L'ensemble des contenus présents sur le site web "Zoo Arcadia", incluant mais ne se limitant pas aux textes, images, vidéos, et éléments graphiques, sont la propriété exclusive de leurs auteurs respectifs. Toute reproduction, représentation, modification, distribution, totale ou partielle, de ces contenus est interdite sans autorisation préalable.</p>
+      <h2>Cookies :</h2>
+      <p>Le site web "Zoo Arcadia" n'utilise pas de cookies pour améliorer l'expérience utilisateur. En naviguant sur ce site, vous consentez cependant à envoyer des cookies à Ched pour son anniversaire, et ça c'est cool.</p>
+    </div>
+  </div>
+  <script src="../js/script.js"></script>
+</body>
+</html>
